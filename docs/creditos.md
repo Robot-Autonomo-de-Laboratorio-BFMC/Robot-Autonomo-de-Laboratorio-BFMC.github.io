@@ -95,13 +95,13 @@ capturas de la documentación de NVIDIA y Ultralytics, del foro de
 desarrolladores de NVIDIA, de YouTube y de Dribbble, cada una acreditada al
 pie de la imagen correspondiente.
 
-### Material de origen incierto
+### Material de la organización
 
 Las figuras que muestran detecciones sobre la pista oficial (**figs. 29 y 30**
-y las que las acompañan) están construidas sobre fotogramas capturados en la
-pista de la competencia. Las detecciones y anotaciones son producto de nuestro
-modelo; sobre el metraje de base no podemos afirmar con certeza si es propio o
-de la organización, así que lo tratamos como material de terceros.
+y las que las acompañan) están construidas sobre metraje que la organización
+del Bosch Future Mobility Challenge entrega a los equipos participantes. Ese
+material es de la competencia; las detecciones y anotaciones superpuestas son
+producto de nuestro modelo.
 
 ## Personas
 

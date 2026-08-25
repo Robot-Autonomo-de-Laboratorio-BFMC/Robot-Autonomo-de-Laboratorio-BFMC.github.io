@@ -1,0 +1,65 @@
+Robot Autónomo de Laboratorio — BFMC
+Documentación del trabajo final de grado
+
+Copyright (c) 2025
+Nicolas Visintin, Juan Francisco Pittaro, Nicolás Mangini, Iván Ostrowski
+Universidad Austral — Facultad de Ingeniería
+
+================================================================
+OBRA PROPIA — Creative Commons Atribución 4.0 Internacional
+================================================================
+
+El texto de esta documentación y las figuras de elaboración propia
+(diagramas, modelos CAD, capturas del software desarrollado por los
+autores, fotografías tomadas por el equipo y resultados experimentales)
+se publican bajo la licencia Creative Commons Atribución 4.0
+Internacional (CC BY 4.0).
+
+Usted es libre de compartir y adaptar este material, incluso con fines
+comerciales, siempre que otorgue el crédito correspondiente.
+
+Texto completo de la licencia:
+https://creativecommons.org/licenses/by/4.0/deed.es
+
+================================================================
+MATERIAL DE TERCEROS — EXCLUIDO DE LA LICENCIA ANTERIOR
+================================================================
+
+Esta documentación reproduce material que NO pertenece a los autores y
+que, por lo tanto, NO queda cubierto por la licencia CC BY 4.0. Se
+incluye con fines académicos e ilustrativos, al amparo del derecho de
+cita. Los derechos pertenecen a sus respectivos titulares, y su
+reutilización requiere permiso de ellos, no de los autores.
+
+Ese material está identificado individualmente en la página de
+créditos del sitio:
+https://robot-autonomo-de-laboratorio-bfmc.github.io/creditos/
+
+Comprende, en líneas generales:
+
+  - Material de Bosch y de la Bosch Future Mobility Challenge:
+    fotografías de la pista oficial, infografías de la competencia,
+    capturas del sitio de la competencia y planos del reglamento.
+
+  - Fotografías de catálogo de fabricantes y comercios, utilizadas
+    para ilustrar los componentes adquiridos (Tamiya, NVIDIA, Intel,
+    Xiaomi y proveedores de electrónica).
+
+  - Una figura proveniente de una publicación académica de acceso
+    abierto (Frontiers in Radiology, CC BY 4.0). Es reutilizable
+    citando a sus autores; la cita está en la página de créditos.
+
+  - Capturas de pantalla de documentación, foros y herramientas de
+    terceros (NVIDIA, Ultralytics, Roboflow, YouTube y otros).
+
+Las marcas y logotipos que aparecen en ese material pertenecen a sus
+titulares. Este proyecto no está afiliado a Bosch ni auspiciado por
+ninguna de las empresas mencionadas.
+
+================================================================
+CÓDIGO FUENTE
+================================================================
+
+El código del vehículo no forma parte de este repositorio. Vive en los
+repositorios de la organización y se rige por sus propias licencias:
+https://github.com/Robot-Autonomo-de-Laboratorio-BFMC

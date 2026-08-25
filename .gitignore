@@ -1,0 +1,10 @@
+site/
+.venv-build/
+__pycache__/
+*:Zone.Identifier
+
+# Fuentes privadas: el contenido se publica como paginas del sitio, pero los
+# documentos originales editables no se versionan.
+*.docx
+*.pptx
+informe-final.pdf

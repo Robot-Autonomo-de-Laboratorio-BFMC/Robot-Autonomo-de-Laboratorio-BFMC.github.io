@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{#
+  PROVISORIO — sacar cuando el sitio se haga publico de verdad.
+
+  El repositorio es publico y la URL es accesible para cualquiera que la tenga.
+  Esto NO es privacidad: solo le pide a los buscadores que no lo indexen, para
+  poder circular el sitio (direccion de carrera, el resto del equipo) sin que
+  todavia aparezca al buscar los nombres de los autores.
+
+  Para publicarlo en serio: borrar overrides/ y la linea `custom_dir` de
+  mkdocs.yml. Ojo que la indexacion no es inmediata en ninguna direccion:
+  Google puede tardar dias en empezar a levantarlo.
+#}
+{% block extrahead %}
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+{% endblock %}

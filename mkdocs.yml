@@ -1,0 +1,103 @@
+site_name: Robot Autónomo de Laboratorio — BFMC
+site_description: Vehículo autónomo a escala. Documentación técnica y bitácora del proyecto de tesis.
+site_url: https://robot-autonomo-de-laboratorio-bfmc.github.io/
+repo_url: https://github.com/Robot-Autonomo-de-Laboratorio-BFMC
+repo_name: Robot-Autonomo-de-Laboratorio-BFMC
+copyright: >
+  Nicolas Visintin · Juan Francisco Pittaro · Nicolás Mangini · Iván Ostrowski — 2025 ·
+  <a href="/creditos/">CC BY 4.0, con excepciones</a>
+
+theme:
+  name: material
+  language: es
+  # PROVISORIO: solo aporta el meta noindex. Ver overrides/main.html.
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: es
+
+nav:
+  - Inicio: index.md
+  - Cómo llegamos acá: timeline.md
+  - Informe de tesis:
+      - Portada: informe/portada.md
+      - Resumen ejecutivo: informe/resumen-ejecutivo-abstract.md
+      - Introducción: informe/introduccion.md
+      - Marco teórico: informe/marco-teorico.md
+      - Hardware — diseño e integración: informe/diseno-e-integracion-electromecanica-hardware.md
+      - Arquitectura de software y control: informe/arquitectura-de-software-y-control.md
+      - Entorno de validación: informe/implementacion-del-entorno-de-validacion.md
+      - Análisis experimental y resultados: informe/analisis-experimental-y-resultados.md
+      - Análisis de costos: informe/analisis-de-costos.md
+      - Impacto ético y social: informe/analisis-de-impacto-etico-y-social.md
+      - Proyecciones y mejoras: informe/proyecciones-y-mejoras-potenciales-a-implementar.md
+      - Conclusiones: informe/conclusiones-del-proyecto.md
+      - Referencias bibliográficas: informe/referencias-bibliograficas.md
+      - Glosario: informe/glosario.md
+      - Anexos: informe/anexos.md
+  - Arquitectura:
+      - Visión general: arquitectura/index.md
+      - VCU — ESP32: arquitectura/vcu.md
+      - Brain — Jetson: arquitectura/brain.md
+  - Visión artificial:
+      - El modelo: vision/index.md
+      - Informe 1 vs 10 épocas: vision/informe-comparativo.md
+      - Detección de semáforos: vision/informe-semaforos.md
+  - Bitácora de laboratorio:
+      - Jetson — de flash a success: archivo/notion/jetson/index.md
+      - Autostart con systemd: archivo/notion/jetson/autostart-de-aplicaciones-en-jetson-usando-systemd.md
+      - Crear una imagen custom: archivo/notion/jetson/crear-una-imagen-custom.md
+      - Mejoras en general: archivo/notion/jetson/mejoras-en-general.md
+      - Detector de líneas: archivo/notion/detector-de-lineas/index.md
+  - Créditos y licencia: creditos.md

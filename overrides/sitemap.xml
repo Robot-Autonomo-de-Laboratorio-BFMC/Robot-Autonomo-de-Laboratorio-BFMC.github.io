@@ -1,0 +1,10 @@
+{# PROVISORIO — pisa el sitemap de MkDocs con uno vacio.
+
+   El sitemap normal lista las 30 URLs del sitio y es justo lo que usa un
+   buscador para descubrir paginas que nadie enlaza. Mientras el sitio no sea
+   publico del todo, no queremos publicar ese indice.
+
+   Al sacar overrides/ vuelve solo el sitemap completo. #}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+</urlset>

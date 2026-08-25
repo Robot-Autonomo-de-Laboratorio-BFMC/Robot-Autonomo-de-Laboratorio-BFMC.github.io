@@ -1,0 +1,129 @@
+/* --- Portada: hero con foto --------------------------------------------- */
+
+.hero { margin: 0 0 3rem; }
+
+/* El titulo y los tags van a todo el ancho; la foto es vertical, asi que las
+   dos columnas arrancan recien debajo. */
+.hero__body {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.2rem;
+  /* La foto es mas alta que la columna de texto: con `center` el sobrante se
+     reparte arriba y abajo y abre un hueco bajo los tags. */
+  align-items: start;
+}
+
+.hero__text > :first-child { margin-top: 0; }
+
+h1.hero__title {
+  color: var(--md-default-fg-color);
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin: 0 0 .55rem;
+}
+
+.hero__lead {
+  font-size: .82rem;
+  line-height: 1.75;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.2rem;
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-bottom: .9rem;
+}
+
+.hero__tag {
+  font-size: .62rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .3rem .6rem;
+  border-radius: 2rem;
+  color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+}
+
+/* Accesos del hero: botones compactos, borde fino y esquinas suaves */
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 1.5rem 0 0;
+}
+
+.hero__links a {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  padding: .62rem 1.05rem;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 38%, transparent);
+  border-radius: .38rem;
+  transition: background-color .18s, border-color .18s, color .18s;
+}
+
+.hero__links a:hover,
+.hero__links a:focus-visible {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.hero__figure { margin: 0; }
+
+/* La foto de la defensa trae mucho techo arriba: se recorta con object-position
+   en lugar de tocar el archivo, para no perder resolucion. */
+.hero__figure img.hero__crop {
+  aspect-ratio: 4 / 4.2;
+  object-fit: cover;
+  object-position: center 78%;
+}
+
+.hero__figure img {
+  width: 100%;
+  border-radius: .5rem;
+  display: block;
+  box-shadow: 0 .6rem 1.6rem rgba(0, 0, 0, .22);
+}
+
+.hero__caption {
+  font-size: .66rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: .55rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .hero__body { grid-template-columns: 1fr; gap: 1.6rem; }
+  h1.hero__title { font-size: 1.9rem; }
+  .hero__figure { max-width: 26rem; margin: 0 auto; }
+}
+
+/* La foto de la pista, a lo ancho */
+.band { margin: 2.5rem 0; }
+.band img {
+  width: 100%;
+  border-radius: .5rem;
+  display: block;
+}
+
+/* Raul es una foto vertical: se muestra centrada y acotada, sin recortar */
+.band img.band__portrait {
+  max-width: 24rem;
+  margin: 0 auto;
+  box-shadow: 0 .6rem 1.6rem rgba(0, 0, 0, .22);
+}
+.band figcaption {
+  font-size: .66rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: .55rem;
+  text-align: center;
+}

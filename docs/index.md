@@ -39,10 +39,6 @@ vehículos en primer plano.
 </div>
 </div>
 
-!!! success "Estado: proyecto cerrado y defendido"
-    El desarrollo terminó el **18 de diciembre de 2025** y la tesis fue defendida.
-    Esta wiki es el archivo permanente del trabajo.
-
 ---
 
 ## Por dónde empezar
